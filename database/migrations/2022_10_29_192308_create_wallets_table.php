@@ -22,7 +22,11 @@ class CreateWalletsTable extends Migration
             $table->timestamps();
 
             // Indexe(s)
+            $table->unique(['tracking_code']);
+
+            // Foreign Key(s)
             $table->foreign('user_id')->references('id')->on('users');
+
         });
     }
 

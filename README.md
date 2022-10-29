@@ -15,3 +15,14 @@ This service provides APIs for user's wallet.
 8. Run `php artisan serve --port=8000`
 
 Now, it would be available through: http://localhost=8000
+
+------------------
+
+Won't be used, just FYI, default user's credentials:
+
+- Username: `test@test.com`
+- Password: `1234560!`
+
+------------------
+
+> Note: I will use a constant (hard-codded) token as "servise auth". 
