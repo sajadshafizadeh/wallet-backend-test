@@ -7,7 +7,7 @@ This service provides APIs for user's wallet.
 
 1. Download the project
 2. Run `composer install`
-3. Make a databased named "password_manager" manually
+3. Make a databased named "wallet_backend_test" manually
 4. Setup the database credentials inside the `.env` file
 5. Run `php artisan migrate`
 6. Run `php artisan db:seed`
