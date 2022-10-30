@@ -43,7 +43,7 @@ Postman API collection exists at:
 
 ------------------
 
-Since some require docker-images were not exist on my local machine, and I'm not able to get them from the docker hub repo (because of some Iran's Government internet restrictions at the moment), I just blindly added Dockerfile and docker-compose.yaml files on the project root (not tested):
+Since some required docker-images were not exist on my local machine, and I'm not able to get them from the docker hub repo (because of some Iran's Government internet restrictions at the moment), I just blindly added Dockerfile and docker-compose.yaml files on the project root (not tested):
 
 ![alt text](https://lamtakam.com/img/uploaded_images/1/1667160638.png)
 
