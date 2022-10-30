@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::prefix('user/wallet')->middleware(['service_access_token'])->group(function () {
+    Route::get('/balance/{user}', 'WalletController@getBalance');
+    Route::post('/add-money', 'WalletController@addMoney');
+});

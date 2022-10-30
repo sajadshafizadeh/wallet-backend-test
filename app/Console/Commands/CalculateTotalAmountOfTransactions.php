@@ -2,23 +2,24 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Wallet;
 use Illuminate\Console\Command;
 
-class CumulativeWalletBalance extends Command
+class CalculateTotalAmountOfTransactions extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'total:amount';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'calculate total amount of transactions and print it on terminal';
 
     /**
      * Create a new command instance.
@@ -37,6 +38,7 @@ class CumulativeWalletBalance extends Command
      */
     public function handle()
     {
-        return 0;
+        $totalAmount = Wallet::query()->sum('amount');
+        $this->info("Total amount of transactions is: " . $totalAmount);
     }
 }
