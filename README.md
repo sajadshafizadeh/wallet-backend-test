@@ -40,3 +40,11 @@ A self-defined command (used inside the daily cron job):
 Postman API collection exists at:
 
     wallet-backend-test\storage\api-collections
+
+------------------
+
+Since some require docker-images were not exist on my local machine, and I'm not able to get them from the docker hub repo (because of some Iran's Government internet restrictions at the moment), I just blindly added Dockerfile and docker-compose.yaml files on the project root (not tested):
+
+![alt text](http://url/to/img.png)
+
+So, you would need something like Xampp, Wamp or a virtual-machine, PHP & MySQL installed on to be able investigate the test.
