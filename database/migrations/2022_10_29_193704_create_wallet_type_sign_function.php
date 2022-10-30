@@ -15,7 +15,7 @@ class CreateWalletTypeSignFunction extends Migration
     {
 
         DB::unprepared('
-                CREATE DEFINER=`administrator`@`localhost`
+                CREATE DEFINER=`root`@`localhost`
                 FUNCTION `wallet_type_sign`(`amount` DECIMAL(15,2),
                          `type` ENUM("deposit","withdraw","reward", "payment"))
                 RETURNS decimal(15,2)

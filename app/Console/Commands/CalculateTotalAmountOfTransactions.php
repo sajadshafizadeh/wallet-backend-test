@@ -19,7 +19,7 @@ class CalculateTotalAmountOfTransactions extends Command
      *
      * @var string
      */
-    protected $description = 'calculate total amount of transactions and print it on terminal';
+    protected $description = 'To calculate total amount of transactions and print it on terminal';
 
     /**
      * Create a new command instance.
@@ -39,6 +39,6 @@ class CalculateTotalAmountOfTransactions extends Command
     public function handle()
     {
         $totalAmount = Wallet::query()->sum('amount');
-        $this->info("Total amount of transactions is: " . $totalAmount);
+        $this->info("Wallet Balance: " . $totalAmount . " (IRT)");
     }
 }

@@ -13,6 +13,8 @@ This service provides APIs for user's wallet.
 6. Run `php artisan db:seed`
 7. Run `php artisan key:generate`
 8. Run `php artisan serve --port=8000`
+9. Run `php artisan test` and make sure to see all tests passed successfully (green colored)
+
 
 Now, it would be available through: http://localhost=8000
 
@@ -26,3 +28,15 @@ Won't be used, just FYI, default user's credentials:
 ------------------
 
 > Note: I will use a constant (hard-codded) token as "servise auth". 
+
+------------------
+
+A self-defined command (used inside the daily cron job):
+
+    php artisan total:amount
+
+------------------
+
+Postman API collection exists at:
+
+    wallet-backend-test\storage\api-collections

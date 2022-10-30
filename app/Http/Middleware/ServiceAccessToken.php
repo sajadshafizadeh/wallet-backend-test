@@ -18,7 +18,7 @@ class ServiceAccessToken
     {
 
         // Symbolic service accessibility manner
-        $serviceAccessToken = "1234567890!&^$sa";
+        $serviceAccessToken = '1234567890!&^$sa';
         
         if ( true || $request->access_token === $serviceAccessToken )
             return $next($request);
