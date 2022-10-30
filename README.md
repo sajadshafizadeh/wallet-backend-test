@@ -27,7 +27,7 @@ Won't be used, just FYI, default user's credentials:
 
 ------------------
 
-> Note: I will use a constant (hard-codded) token as "servise auth". 
+> Note: I will use a constant (hard-codded) token as "service auth". 
 
 ------------------
 
